@@ -2,6 +2,8 @@ const {
   authedClient,
   btcAmt,
   btcInterval,
+  bchAmt,
+  bchInterval,
   ethAmt,
   ethInterval,
   ltcAmt,
@@ -50,6 +52,9 @@ const coinOn = (coinSymbol, amt, interval) => {
 const botOn = () => {
   if (btcAmt >= 1.00) {
     coinOn('BTC', btcAmt, btcInterval);
+  }
+  if (bchAmt >= 1.00) {
+    coinOn('BCH', bchAmt, bchInterval);
   }
   if (ethAmt >= 1.00) {
     coinOn('ETH', ethAmt, ethInterval);

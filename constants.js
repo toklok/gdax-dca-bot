@@ -11,6 +11,9 @@ const authedClient = new Gdax.AuthenticatedClient(key, b64secret, passphrase, ap
 const btcAmt = process.env.INTERVAL_INVESTMENT_AMOUNT_BTC;
 const btcInterval = process.env.INVESTMENT_INTERVAL_BTC;
 
+const bchAmt = process.env.INTERVAL_INVESTMENT_AMOUNT_BCH;
+const bchInterval = process.env.INVESTMENT_INTERVAL_BCH;
+
 const ethAmt = process.env.INTERVAL_INVESTMENT_AMOUNT_ETH;
 const ethInterval = process.env.INVESTMENT_INTERVAL_ETH;
 
@@ -25,6 +28,8 @@ module.exports = {
   authedClient,
   btcAmt,
   btcInterval,
+  bchAmt,
+  bchInterval,
   ethAmt,
   ethInterval,
   ltcAmt,

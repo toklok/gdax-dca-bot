@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "gdax": "^0.4.2",
+    "gdax": "git+https://github.com/coinbase/gdax-node.git",
     "node-schedule": "^1.2.5"
   }
 }
